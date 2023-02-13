@@ -1,0 +1,4 @@
+tensorflow==2.8.0 # Feb 2nd, 2022
+numpy==1.21.2 # Aug 15th, 2021
+protobuf==3.20.* # Apr 1st, 2022
+matplotlib==3.6.3 # January 11th, 2023

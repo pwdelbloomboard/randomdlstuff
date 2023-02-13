@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+  randomdlstuff:
+    image: randomdlstuffimage
+    build: .
+    container_name: randomstuffcontainer
+    working_dir: /home/jovyan/work
+    command: jupyter lab --allow-root
+    environment:
+      - PASSWORD=password
+      - GRANT_SUDO=yes
+      # - JUPYTER_TOKEN="easy"
+    ports: 
+      - 8888:8888
+    volumes:
+      - type: bind
+        source: ./work
+        target: /home/jovyan/work
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    tty: true
