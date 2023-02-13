@@ -44,8 +44,6 @@ RUN apt-get update && apt-get install -y \
         wget \
         unzip
 
-# !conda install pillow
-
 # Upgrade Pip
 RUN pip install --upgrade pip
 

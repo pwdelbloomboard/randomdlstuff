@@ -2,3 +2,5 @@ tensorflow==2.8.0 # Feb 2nd, 2022
 numpy==1.21.2 # Aug 15th, 2021
 protobuf==3.20.* # Apr 1st, 2022
 matplotlib==3.6.3 # January 11th, 2023
+tf-explain==0.3.1 # Nov 18th, 2021
+opencv-python==4.7.0.68
